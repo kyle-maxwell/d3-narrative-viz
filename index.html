@@ -1,75 +1,26 @@
 <!DOCTYPE html>
 
-<style>
-  body {
-    font: 23px Helvetica Neue;
-  }
-  .tab {
-    margin-left: 45px;
-    max-width: 900px;
-  }
-  .title {
-    font: 300 72px Helvetica Neue;
-    fill: #555;
-  }
-  .y.axis path {
-    display: none;
-  }
-  .y.axis line {
-    stroke: #fff;
-    stroke-opacity: .2;
-    shape-rendering: crispEdges;
-  }
-  .y.axis .zero line {
-    stroke: #000;
-    stroke-opacity: 1;
-  }
-  svg {
-    font: 10px sans-serif;
-  }
-  rect { /* F Color */
-    fill-opacity: .6;
-    fill: #DB4C77;
-  }
-  rect:first-child { /* M Color */
-    fill: #10559A;
-  }
-</style>
-
+<link rel="stylesheet" href="style.css">
 <script src="https://d3js.org/d3.v3.min.js"></script>
 <script src="scripts.js"></script>
 
-<!-- <button onclick='displayPopulationPyramid("us_population.csv")'> << Backward </button>
-<button onclick='displayPopulationPyramid("china_population.csv")'> Forward >> </button> -->
-
-
 <body onload='displayPopulationPyramid("us_population.csv")'>
+
 <h1 class="tab"> Population Distribution and Demography </h1>
+
+<h3 class="tab"> Introduction </h3>
   
 <p class="tab">
   The following martini glass narrative vizualization is an exploration of the population distributions of select countries and regions. The datasets were collected from populationpyramid.net and provide insight into demographies spanning historical records from 1950 to projections in 2050.
-
-  
 </p>
+
 <p class="tab">
-  Below is representation of the population distribution of the United States in the year 1950. The population is separated into cohorts distinguished by age. Each age cohort is labeled by the youngest age in the 5-year cohort. Additionally, each cohort is split by sex as represented by male in blue and female in red. This allows us to easily vizualize a male-female population imbalance within each age cohort.
+  Below is representation of the population distribution of the United States in the year 1950. The population is separated into cohorts distinguished by age. Each age cohort is labeled by the youngest age in the 5-year cohort. Additionally, each cohort is split by sex as represented by male in blue and female in red. By placing the bars side-by-side rather than opposite each other as done in traditional population pyramids, a male-female population imbalance is easier to observe.
+</p>
+
+<p class="tab">
+  <input type="button" onclick="location.href='page2.html';" value="Continue" />
 </p>
 
 </body>
-
-<!-- todo, add total population? -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

@@ -1,0 +1,41 @@
+body {
+  font: 23px Helvetica Neue;
+}
+
+.tab {
+  margin-left: 45px;
+  max-width: 900px;
+}
+
+.title {
+  font: 300 72px Helvetica Neue;
+  fill: #555;
+}
+
+.y.axis path {
+  display: none;
+}
+
+.y.axis line {
+  stroke: #fff;
+  stroke-opacity: .2;
+  shape-rendering: crispEdges;
+}
+
+.y.axis .zero line {
+  stroke: #000;
+  stroke-opacity: 1;
+}
+
+svg {
+  font: 10px sans-serif;
+}
+
+rect { /* F Color */
+  fill-opacity: .6;
+  fill: #DB4C77;
+}
+
+rect:first-child { /* M Color */
+  fill: #10559A;
+}
